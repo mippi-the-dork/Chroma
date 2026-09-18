@@ -1,3 +1,5 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
 #include "ChromaSettings.h"
 #include "ChromaState.h"
 UChromaSettings::UChromaSettings()

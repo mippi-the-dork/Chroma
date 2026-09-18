@@ -12,12 +12,16 @@
 		{
 			"Name": "Chroma",
 			"Type": "Editor",
-			"LoadingPhase": "PostEngineInit"
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+        		"Win64"
+      			]
 		}
 	],
 	"CreatedByURL": "",
 	"DocsURL": "",
 	"MarketplaceURL": "",
+	"EngineVersion": "5.8.0",
 	"SupportURL": "",
 	"IsExperimentalVersion": false,
 	"Installed": false

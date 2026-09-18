@@ -1,3 +1,5 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
 #include "ChromaState.h"
 #include "ChromaSettings.h"
 #include "ActorFolder.h"
