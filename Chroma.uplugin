@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0.0",
+	"VersionName": "1.0.1",
 	"FriendlyName": "Chroma",
 	"Description": "Adds actor and folder color organization to the World Outliner, with named palettes, matching selection, tinted icons, colored selection outlines, and viewport visualization.",
 	"Category": "Editor",
@@ -14,8 +14,8 @@
 			"Type": "Editor",
 			"LoadingPhase": "PostEngineInit",
 			"PlatformAllowList": [
-        		"Win64"
-      			]
+				"Win64"
+			]
 		}
 	],
 	"CreatedByURL": "",
