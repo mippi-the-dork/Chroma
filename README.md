@@ -139,36 +139,7 @@ Chroma does not add runtime Actors, Components, or gameplay systems.
 
 ---
 
-> [!IMPORTANT]
-> **ATTENTION - README AUTHOR**
->
-> This should be the main Chroma interaction demonstration.
->
-> **Recommended visual:** GIF
->
-> Show:
->
-> 1. A World Outliner containing several Actors and Folders.
-> 2. Click a Chroma swatch.
-> 3. Choose a named color.
-> 4. Show the row swatch and icon update.
-> 5. Select several Actors.
-> 6. Click the swatch of one of the selected rows.
-> 7. Assign another color to the complete selection.
->
-> Keep the viewport visible enough that the colored selection outline can update too.
->
-> Around 8 to 12 seconds is ideal.
->
-> **Suggested file:**
->
-> `Doc/Images/Chroma-Assigning-Colors.gif`
->
-> Once captured, replace this callout with:
->
-> ```markdown
-> ![Assigning Actor and Folder colors with Chroma](Doc/Images/Chroma-Assigning-Colors.gif)
-> ```
+![Assigning Actor and Folder colors with Chroma](Doc/Images/Chroma-Assigning-Colors.gif)
 
 ---
 
