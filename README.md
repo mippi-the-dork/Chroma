@@ -239,34 +239,7 @@ Assigning **Yellow** to `Lighting` creates an override for that branch.
 
 Actors added to those Folders later inherit the appropriate effective color automatically.
 
-> [!IMPORTANT]
-> **ATTENTION - README AUTHOR**
->
-> Capture Folder inheritance here.
->
-> **Recommended visual:** GIF
->
-> Show:
->
-> 1. An uncolored Folder containing several Actors and at least one nested Folder.
-> 2. Assign a color to the parent Folder.
-> 3. Show all child swatches and icons inherit the color.
-> 4. Assign a different color to the nested Folder.
-> 5. Show that branch update.
-> 6. Use **Clear Override** on the nested Folder.
-> 7. Show it return to the inherited parent color.
->
-> The World Outliner should occupy most of the recording.
->
-> **Suggested file:**
->
-> `Doc/Images/Chroma-Inheritance.gif`
->
-> Once captured, replace this callout with:
->
-> ```markdown
-> ![Folder color inheritance with Chroma](Doc/Images/Chroma-Inheritance.gif)
-> ```
+![Folder color inheritance with Chroma](Doc/Images/Chroma-Inheritance.gif)
 
 ---
 
