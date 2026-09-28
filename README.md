@@ -10,39 +10,7 @@ Chroma lets you assign named or custom colors to Actors and Folders, organize la
 ![Version](https://img.shields.io/badge/Version-1.0.1-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-> [!IMPORTANT]
-> **ATTENTION - README AUTHOR**
->
-> Capture the primary hero image for Chroma here.
->
-> **Recommended visual:** Screenshot
->
-> Show both the **World Outliner and viewport**.
->
-> The Outliner should contain a reasonably complex level organized into several clearly different colors. For example:
->
-> - Environment = Green
-> - Gameplay = Orange
-> - Lighting = Yellow
-> - Audio = Purple
-> - Player-related Actors = Blue
->
-> Select one or more colored Actors so their Chroma-colored selection outlines are visible in the viewport.
->
-> The goal is for someone to understand the value of Chroma before reading anything else:
->
-> **the level has been visually organized by color, both in the Outliner and viewport.**
->
-> **Suggested file:**
->
-> `Doc/Images/Chroma-Hero.png`
->
-> Once captured, replace this callout with:
->
-> ```markdown
-> ![Chroma color organization in Unreal Engine](Doc/Images/Chroma-Hero.png)
-> ```
-
+![Chroma color organization in Unreal Engine](Doc/Images/Chroma-Hero.png)
 ---
 
 ## What is Chroma?
