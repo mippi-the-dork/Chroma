@@ -782,34 +782,7 @@ Enabled by default.
 
 Controls whether selected Actors use Chroma-colored selection outlines.
 
-> [!IMPORTANT]
-> **ATTENTION - README AUTHOR**
->
-> Capture the Chroma Project Settings here.
->
-> **Recommended visual:** Screenshot
->
-> Show:
->
-> **Project Settings > Plugins > Chroma**
->
-> Make sure the image clearly includes:
->
-> - Several Project Palette entries
-> - Tint Outliner Icons
-> - Tint Selection Outlines
->
-> Rename at least a few palette entries to meaningful project categories before taking the screenshot. Names such as `Gameplay`, `Environment`, and `Lighting` will communicate the feature better than leaving every default color name unchanged.
->
-> **Suggested file:**
->
-> `Doc/Images/Chroma-Settings.png`
->
-> Once captured, replace this callout with:
->
-> ```markdown
-> ![Chroma Project Settings and named color palette](Doc/Images/Chroma-Settings.png)
-> ```
+![Chroma Project Settings and named color palette](Doc/Images/Chroma-Settings.png)
 
 ---
 
