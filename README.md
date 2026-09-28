@@ -639,28 +639,7 @@ and use:
 
 to enable or disable it.
 
-> [!IMPORTANT]
-> **ATTENTION - README AUTHOR**
->
-> Capture selection-outline coloring here.
->
-> **Recommended visual:** Screenshot
->
-> Select several clearly separated Actors with different Chroma colors at the same time.
->
-> Make sure at least 3 different selection-outline colors are easily visible.
->
-> Keep enough of the World Outliner visible to show that the Actor colors correspond to their Chroma assignments.
->
-> **Suggested file:**
->
-> `Doc/Images/Chroma-Selection-Outlines.png`
->
-> Once captured, replace this callout with:
->
-> ```markdown
-> ![Chroma colored viewport selection outlines](Doc/Images/Chroma-Selection-Outlines.png)
-> ```
+![Chroma colored viewport selection outlines](Doc/Images/Chroma-Selection-Outlines.png)
 
 ---
 
