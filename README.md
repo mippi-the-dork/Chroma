@@ -702,37 +702,9 @@ Unassigned      -> Neutral Gray
 
 This provides a level-wide visualization of your organizational structure.
 
-> [!IMPORTANT]
-> **ATTENTION - README AUTHOR**
->
-> This is one of the most important visuals for Chroma.
->
-> **Recommended visual:** Side-by-side screenshot or short GIF
->
-> A side-by-side screenshot is probably the cleanest option.
->
-> Use the exact same viewport camera:
->
-> **Left:** Normal Lit view.
->
-> **Right:** Actor Coloration > Chroma.
->
-> Use a scene with multiple clearly defined Chroma groups so the visualization becomes dramatically easier to understand.
->
-> Also make sure the Chroma inspection panel is visible in the upper-left corner of the Chroma view.
->
-> **Suggested files:**
->
-> - `Doc/Images/Chroma-Lit.png`
-> - `Doc/Images/Chroma-Visualization.png`
->
-> Once captured, replace this callout with:
->
-> ```markdown
-> | Lit View | Chroma Visualization |
-> |---|---|
-> | ![Level in normal Lit view](Doc/Images/Chroma-Lit.png) | ![Level using Chroma Actor Coloration](Doc/Images/Chroma-Visualization.png) |
-> ```
+| Lit View | Chroma Visualization |
+|---|---|
+| ![Level in normal Lit view](Doc/Images/Chroma-Lit.png) | ![Level using Chroma Actor Coloration](Doc/Images/Chroma-Visualization.png) |
 
 ---
 
