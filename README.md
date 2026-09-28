@@ -547,35 +547,7 @@ while invoking either matching-selection command to add matching items to the ex
 
 ---
 
-> [!IMPORTANT]
-> **ATTENTION - README AUTHOR**
->
-> Capture color matching here.
->
-> **Recommended visual:** GIF
->
-> Show several colored Actors distributed through a hierarchy.
->
-> Demonstrate:
->
-> 1. Open the Chroma menu for one Actor.
-> 2. Choose **Select Matching Color**.
-> 3. Show all matching items become selected.
-> 4. Clear selection.
-> 5. Use **Select Matching Color Among Siblings**.
-> 6. Show only matching rows at that hierarchy level selected.
->
-> Keep the hierarchy simple enough that the difference between the two operations is immediately understandable.
->
-> **Suggested file:**
->
-> `Doc/Images/Chroma-Matching.gif`
->
-> Once captured, replace this callout with:
->
-> ```markdown
-> ![Selecting matching colors with Chroma](Doc/Images/Chroma-Matching.gif)
-> ```
+![Selecting matching colors with Chroma](Doc/Images/Chroma-Matching.gif)
 
 ---
 
