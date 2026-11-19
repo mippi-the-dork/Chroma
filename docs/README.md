@@ -42,6 +42,12 @@ The **Design** guide for each topic describes real controls, intended workflows,
 
 Chroma assignments are **editor package metadata**, not a runtime Component. Named presets and preferences are stored through project configuration. Save the affected Actor, Folder or level packages and relevant configuration when sharing color organization through Perforce or other source control. Chroma does not check files out or submit them automatically.
 
+## Documentation media and verification
+
+Chroma's existing editor screenshots and GIFs appear throughout this manual. Planned visuals use a neutral placeholder with two lines below it: a reader-facing explanation and **specific Image/GIF capture instructions** describing exactly what should appear in the replacement.
+
+The [Media Inventory](MEDIA_INVENTORY.md) lists all 35 planned captures and filenames. The [Documentation Audit](DOCUMENTATION_AUDIT.md) tracks remaining work, while the [Verification Matrix](VERIFICATION_MATRIX.md) records tests that still require actual Unreal Editor or browser results.
+
 ## Important boundaries
 
 Chroma only edits **loaded content** in ordinary editor worlds; unloaded World Partition Actors are excluded from matching, editing and used-color collection. Attachment relationships are not folder inheritance. Selection outlines can display at most six extra colors when slots are available. Viewport coloration is an editor view mode and doesn't change materials or packaged output.
