@@ -166,8 +166,8 @@
   function renderNav(){
     const out=[];
     out.push('<a class="nav-home" data-page="'+esc(state.manifest.home)+'" href="'+pageUrl(state.manifest.home)+'">⌂ Documentation Home</a>');
-    out.push('<a class="ref-link" data-page="ROADMAP.md" href="'+pageUrl('ROADMAP.md')+'">Roadmap · Planned Features</a>');
-    out.push('<div class="nav-label">CURRENT VERSION · '+esc((state.manifest.baseline||'v2.1.0').replace('Focus ','').toUpperCase())+'</div>');
+    out.push('<a class="ref-link" data-page="ROADMAP.md" href="'+pageUrl('ROADMAP.md')+'">Roadmap · Current & Future</a>');
+    out.push('<div class="nav-label">CURRENT VERSION · '+esc((state.manifest.baseline||'Chroma v1.0.1').replace('Chroma ','').toUpperCase())+'</div>');
     
     
     
@@ -259,7 +259,7 @@
     });
 
     // Images in Markdown are resolved relative to the Markdown source file,
-    // rather than the site's query-driven /Focus/ page URL. External images
+    // rather than the site's query-driven /Chroma/ page URL. External images
     // are left unchanged; this also keeps GitHub's Markdown preview correct.
     els.article.querySelectorAll('img[src]').forEach(img=>{
       const raw=img.getAttribute('src')||'';
@@ -354,7 +354,7 @@
       const md=await r.text();
       if(token!==state.request) return;
       renderMarkdown(md);
-      document.title=label(state.currentMeta)+' | Focus Documentation';
+      document.title=label(state.currentMeta)+' | Chroma Documentation';
       const target=hash||location.hash.slice(1);
       if(target) requestAnimationFrame(()=>document.getElementById(target)?.scrollIntoView({block:'start'}));
       else window.scrollTo({top:0,behavior:'auto'});
@@ -401,7 +401,7 @@
           p.searchBody=stripSearchText(await r.text());
           p.searchBodyLower=p.searchBody.toLowerCase();
         }catch(error){
-          console.warn('Focus search could not index',p.path,error);
+          console.warn('Chroma search could not index',p.path,error);
         }
       }
     }
