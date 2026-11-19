@@ -26,6 +26,12 @@ Hold **Shift** when invoking either matching-selection command to add matches to
 
 Color all gameplay triggers with a **Gameplay Trigger** preset. Choose an example trigger, run **Select Matching Color**, then edit the resulting loaded Actors in another Unreal tool.
 
+## Matching uncolored items
+
+Current matching treats items that **both resolve to no visible color** as matching. That means an explicit **No Color** item and an item with no direct assignment can belong to the same colorless matching result. Use a named preset if you need a separate, reliably selectable organizational group.
+
+For **Select Matching Color Among Siblings**, immediate Outliner parent means the attachment parent for an attached Actor, or its containing Folder otherwise. This selection-scope rule is separate from Folder-only color inheritance.
+
 ## Filtering and unloaded content
 
 Chroma enumerates **loaded** items even if an Actor is filtered from the visible Outliner. It can still select those Actors. Filtered-out **Folder** rows cannot always be selected safely: Chroma notifies you to clear the Outliner filter. Unloaded World Partition Actors cannot be selected by this operation.
