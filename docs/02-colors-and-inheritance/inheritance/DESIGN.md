@@ -20,6 +20,12 @@ Environment              Green (direct Folder)
 
 ## New Actors inherit automatically
 
+<figure class="doc-media" data-existing-media="Chroma-Inheritance.gif">
+  <img src="https://raw.githubusercontent.com/mippi-the-dork/Chroma/main/Doc/Images/Chroma-Inheritance.gif" alt="Chroma folder color inheritance and nested overrides" loading="lazy">
+  <figcaption>An Actor uses the nearest containing Folder’s effective color until a direct assignment overrides it.</figcaption>
+</figure>
+
+
 Adding an Actor to an existing colored folder makes its effective color resolve from that folder. The color is not copied onto the Actor as a permanent direct assignment. The same holds for newly created nested folders without an override.
 
 ## Attachments do not create inheritance

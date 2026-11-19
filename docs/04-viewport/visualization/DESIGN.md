@@ -19,6 +19,18 @@ Unassigned content appears neutral gray. A mesh inheriting Green from its Enviro
 
 ## Compare Lit and Chroma
 
+<figure class="doc-media" data-existing-media="Chroma-Visualization.png">
+  <img src="https://raw.githubusercontent.com/mippi-the-dork/Chroma/main/Doc/Images/Chroma-Visualization.png" alt="Same level in Chroma Actor Coloration view" loading="lazy">
+  <figcaption>Chroma Actor Coloration displays supported geometry using effective organizational colors.</figcaption>
+</figure>
+
+
+<figure class="doc-media" data-existing-media="Chroma-Lit.png">
+  <img src="https://raw.githubusercontent.com/mippi-the-dork/Chroma/main/Doc/Images/Chroma-Lit.png" alt="Level scene in Unreal Engine Lit view" loading="lazy">
+  <figcaption>Normal Lit view displays the authored materials and lighting before changing to Chroma visualization.</figcaption>
+</figure>
+
+
 In Lit mode you see normal materials and lighting. In Chroma's Actor Coloration mode you see organizational color independent of the material appearance. Switch back to **Lit** when your visual audit is finished.
 
 ## Why use it?

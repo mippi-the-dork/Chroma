@@ -10,6 +10,12 @@ The feature is enabled by default. To disable it, open **Project Settings → Pl
 
 ## Six-color limit
 
+<figure class="doc-media" data-existing-media="Chroma-Selection-Outlines.png">
+  <img src="https://raw.githubusercontent.com/mippi-the-dork/Chroma/main/Doc/Images/Chroma-Selection-Outlines.png" alt="Colored selection outlines in Chroma" loading="lazy">
+  <figcaption>Selected Actors can display different Chroma-colored outlines, subject to available renderer slots.</figcaption>
+</figure>
+
+
 <!-- Media target: IMAGE | outline-six-colors | docs/assets/media/outline-six-colors.png -->
 <figure class="doc-media" data-kind="image" data-media-id="outline-six-colors">
   <img src="../../assets/media-placeholder.png" alt="Chroma uses up to six extra outline-color slots before falling back to Unreal's ordinary selection outline." loading="lazy">

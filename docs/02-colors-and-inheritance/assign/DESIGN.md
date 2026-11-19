@@ -19,6 +19,12 @@ Choose a named preset to give the item a stable project-defined color. Choose Cu
 
 ## Actor versus Folder assignments
 
+<figure class="doc-media" data-existing-media="Chroma-Assigning-Colors.gif">
+  <img src="https://raw.githubusercontent.com/mippi-the-dork/Chroma/main/Doc/Images/Chroma-Assigning-Colors.gif" alt="Assigning colors to Chroma Actors and Folders" loading="lazy">
+  <figcaption>Color assignments appear on Outliner rows immediately after choosing a palette entry.</figcaption>
+</figure>
+
+
 An Actor's direct assignment affects that Actor alone. A Folder assignment becomes the inherited default for its contents and nested folders unless a more specific assignment overrides it.
 
 For example, assign **Environment = Green** to a folder. Its unassigned children display Green. Assign a child **Critical = Red** and only that child's branch or Actor uses the override.

@@ -14,6 +14,12 @@ This command restricts the match to items with the same immediate World Outliner
 
 ## Shift adds rather than replaces
 
+<figure class="doc-media" data-existing-media="Chroma-Matching.gif">
+  <img src="https://raw.githubusercontent.com/mippi-the-dork/Chroma/main/Doc/Images/Chroma-Matching.gif" alt="Selecting Actors with matching Chroma colors" loading="lazy">
+  <figcaption>Matching selection gathers related loaded Actors based on the stored Chroma assignment.</figcaption>
+</figure>
+
+
 Hold **Shift** when invoking either matching-selection command to add matches to your current selection. Without Shift, the command performs a matching selection in the appropriate scope.
 
 ## A practical workflow

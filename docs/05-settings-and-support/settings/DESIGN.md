@@ -16,6 +16,12 @@ Use **Edit Named Colors...** from any Chroma palette to jump to the project sett
 
 ## Working with the palette
 
+<figure class="doc-media" data-existing-media="Chroma-Settings.png">
+  <img src="https://raw.githubusercontent.com/mippi-the-dork/Chroma/main/Doc/Images/Chroma-Settings.png" alt="Chroma settings and named project palette" loading="lazy">
+  <figcaption>Project Settings contains the shared named colors and Chroma’s Outliner and viewport presentation options.</figcaption>
+</figure>
+
+
 Choose names that help your team identify organizational roles. Rename and recolor existing presets freely: Actors referring to those presets retain their stable preset identity. Removing a preset that is still used makes those assignments show **Missing preset**, rather than silently changing them.
 
 ## Presentation switches

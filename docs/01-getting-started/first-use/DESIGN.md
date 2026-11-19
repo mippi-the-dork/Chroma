@@ -24,6 +24,12 @@
 
 ## Where to find the palette
 
+<figure class="doc-media" data-existing-media="Chroma-Assigning-Colors.gif">
+  <img src="https://raw.githubusercontent.com/mippi-the-dork/Chroma/main/Doc/Images/Chroma-Assigning-Colors.gif" alt="Chroma color assignment through the World Outliner swatch" loading="lazy">
+  <figcaption>The Chroma swatch menu applies colors to Actors and Folders directly from the World Outliner.</figcaption>
+</figure>
+
+
 Chroma adds a narrow swatch column immediately before **Item Label**. Left-click its square swatch to open the full color menu. The menu shows the current effective color, **Used in This Level**, **Project Palette**, custom color and matching/copy actions.
 
 Right-clicking the swatch opens a smaller action-oriented menu. Compatible Actors also have **Chroma → Color and Selection** in their context menu.
