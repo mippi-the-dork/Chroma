@@ -1,0 +1,322 @@
+{
+  "version": "1.0.1",
+  "placeholder": "assets/media-placeholder.png",
+  "note": "Each slot displays the supplied neutral PNG until replaced. Reader-facing caption remains separate from Capture instructions. Final GIFs are not yet recorded.",
+  "slots": [
+    {
+      "page": "01-getting-started/overview/DESIGN.md",
+      "id": "outliner-color-categories",
+      "kind": "image",
+      "heading": "The core idea",
+      "caption": "Chroma adds a compact color swatch beside Actors and Folders so a level's organization is visible at a glance.",
+      "capture": "Capture the Unreal World Outliner with at least three named folders (Environment, Gameplay, Lighting), differently colored child Actors, and Chroma’s swatch column immediately before Item Label. Show the viewport alongside the Outliner for context.",
+      "final_asset": "assets/media/outliner-color-categories.png"
+    },
+    {
+      "page": "01-getting-started/overview/TECHNICAL.md",
+      "id": "chroma-editor-system-map",
+      "kind": "image",
+      "heading": "Systems involved",
+      "caption": "Chroma coordinates Outliner controls, color resolution, editor rendering and project settings without introducing runtime content.",
+      "capture": "Draw a labeled technical diagram connecting FChromaModule to FChromaColumn, ChromaState, UChromaSettings, FChromaSelectionOutline, the Actor Coloration handler and the viewport inspector. Separate saved data from temporary view presentation.",
+      "final_asset": "assets/media/chroma-editor-system-map.png"
+    },
+    {
+      "page": "01-getting-started/install/DESIGN.md",
+      "id": "install-folder",
+      "kind": "image",
+      "heading": "Installing a release",
+      "caption": "The complete Chroma plugin folder belongs directly under a project's Plugins directory.",
+      "capture": "Show Windows File Explorer displaying YourProject/Plugins/Chroma/ with Chroma.uplugin, Config, Doc, Resources and Source visible. Include the breadcrumb/address bar so the directory depth is clear.",
+      "final_asset": "assets/media/install-folder.png"
+    },
+    {
+      "page": "01-getting-started/first-use/DESIGN.md",
+      "id": "first-assign-workflow",
+      "kind": "gif",
+      "heading": "Try Chroma on a disposable level",
+      "caption": "An initial Chroma workflow colors a folder, overrides an Actor, and then restores inherited color.",
+      "capture": "Record the World Outliner and viewport together: create or select an Environment folder, choose Green from its Chroma swatch, assign one child Actor Red, then use Clear Override to return it to inherited Green. Keep actions legible and the camera stationary.",
+      "final_asset": "assets/media/first-assign-workflow.gif"
+    },
+    {
+      "page": "02-colors-and-inheritance/README.md",
+      "id": "color-state-overview",
+      "kind": "image",
+      "heading": "Typical workflow",
+      "caption": "Chroma distinguishes direct colors, inherited colors and deliberate No Color assignments within one hierarchy.",
+      "capture": "Capture an expanded Outliner hierarchy with a Green Environment folder, two inheriting Actors, a Red overridden Actor, and a No Color child branch. Label which states are direct, inherited and explicit suppression.",
+      "final_asset": "assets/media/color-state-overview.png"
+    },
+    {
+      "page": "02-colors-and-inheritance/assign/DESIGN.md",
+      "id": "palette-menu-anatomy",
+      "kind": "image",
+      "heading": "Use the Outliner swatch",
+      "caption": "The Chroma palette combines used colors, reusable presets, custom color creation and assignment commands.",
+      "capture": "Capture a Chroma swatch menu expanded in a real World Outliner. Include Current Color, Used in This Level, Project Palette, Custom Color, Edit Named Colors, Clear Override and No Color in readable view; if menu is too tall use two connected stills.",
+      "final_asset": "assets/media/palette-menu-anatomy.png"
+    },
+    {
+      "page": "02-colors-and-inheritance/assign/TECHNICAL.md",
+      "id": "assignment-data-flow",
+      "kind": "image",
+      "heading": "Encoded states",
+      "caption": "An assignment is encoded as a preset reference, custom RGB value, No Color marker or absence of an override.",
+      "capture": "Create a compact diagram: Outliner swatch/menu → target selection → metadata Write/Undo → encoded assignment choices P:GUID, C:RRGGBB, N and empty. Differentiate direct storage from effective resolution.",
+      "final_asset": "assets/media/assignment-data-flow.png"
+    },
+    {
+      "page": "02-colors-and-inheritance/palette/DESIGN.md",
+      "id": "named-palette-settings",
+      "kind": "image",
+      "heading": "Give colors a shared meaning",
+      "caption": "Named project presets keep their identity when a team changes their names or visible colors.",
+      "capture": "Show Project Settings > Plugins > Chroma with the Project Palette expanded. Display at least four clearly named colors and their swatches, including Name and Color fields and the ability to add entries.",
+      "final_asset": "assets/media/named-palette-settings.png"
+    },
+    {
+      "page": "02-colors-and-inheritance/palette/DESIGN.md",
+      "id": "preset-recolor",
+      "kind": "gif",
+      "heading": "Identity matters more than RGB",
+      "caption": "Recoloring a named preset updates every Actor using that preset without individually editing their assignments.",
+      "capture": "Record a named Gameplay preset used by several Actors. Change only that preset's Color in Project Settings, then show all corresponding Outliner swatches updating while their named identity remains Gameplay.",
+      "final_asset": "assets/media/preset-recolor.gif"
+    },
+    {
+      "page": "02-colors-and-inheritance/inheritance/TECHNICAL.md",
+      "id": "folder-resolution-chain",
+      "kind": "image",
+      "heading": "Folder resolution algorithm",
+      "caption": "Effective color is resolved from the nearest explicit assignment in an Actor's containing folder hierarchy.",
+      "capture": "Draw a simple Actor → containing Folder → parent Folder chain with a direct Actor value checked first. Show the search stopping at the first nonempty assignment, including N as a stop condition; distinguish Actor attachments from Folder paths.",
+      "final_asset": "assets/media/folder-resolution-chain.png"
+    },
+    {
+      "page": "02-colors-and-inheritance/overrides/DESIGN.md",
+      "id": "clear-versus-no-color",
+      "kind": "gif",
+      "heading": "Workflow: temporarily override an item",
+      "caption": "Clear Override restores inherited color, while No Color intentionally blocks the inherited result.",
+      "capture": "Record one Actor inside a Green Folder. Assign Red, choose Clear Override to return to Green, choose No Color to become uncolored, then Clear Override again. Keep the same row and swatch visible throughout.",
+      "final_asset": "assets/media/clear-versus-no-color.gif"
+    },
+    {
+      "page": "02-colors-and-inheritance/overrides/TECHNICAL.md",
+      "id": "override-encoding",
+      "kind": "image",
+      "heading": "Values and decoding",
+      "caption": "The empty assignment and explicit No Color value follow different resolution paths.",
+      "capture": "Create a comparison diagram of two otherwise identical Actors beneath a Green Folder: one with empty direct metadata inherits Green; the other with N returns No Color. Show P:GUID and C:RRGGBB as explicit overrides.",
+      "final_asset": "assets/media/override-encoding.png"
+    },
+    {
+      "page": "02-colors-and-inheritance/custom-and-used/DESIGN.md",
+      "id": "used-colors-menu",
+      "kind": "image",
+      "heading": "Used in This Level",
+      "caption": "The Used in This Level section offers quick access to colors already assigned to loaded items.",
+      "capture": "Capture the Chroma menu with Used in This Level (loaded items) expanded or fully visible, showing multiple entries. Include a custom color and at least one named preset, and enough Outliner context to identify the source row.",
+      "final_asset": "assets/media/used-colors-menu.png"
+    },
+    {
+      "page": "03-selection-and-outliner/README.md",
+      "id": "selection-workflow-overview",
+      "kind": "image",
+      "heading": "Typical workflow",
+      "caption": "Chroma uses the clicked row's selection state to distinguish single-item changes from batch operations.",
+      "capture": "Capture an Outliner with several selected Actors and one unselected Actor. Highlight a swatch on a selected row and visually annotate that it targets the selected set, whereas the unselected row’s swatch affects only that row.",
+      "final_asset": "assets/media/selection-workflow-overview.png"
+    },
+    {
+      "page": "03-selection-and-outliner/batch/DESIGN.md",
+      "id": "batch-coloring",
+      "kind": "gif",
+      "heading": "Example: color several props",
+      "caption": "Color assignment applies to the compatible current selection when the clicked swatch belongs to that selection.",
+      "capture": "Record three or more selected Actor rows with mixed initial colors, open the Chroma menu from one selected row, and assign a single named preset. Show the Multiple colors readout before and uniform color afterward.",
+      "final_asset": "assets/media/batch-coloring.gif"
+    },
+    {
+      "page": "03-selection-and-outliner/batch/TECHNICAL.md",
+      "id": "clicked-row-targets",
+      "kind": "image",
+      "heading": "Selection targeting",
+      "caption": "The clicked item decides whether Chroma resolves the whole selection or a single target.",
+      "capture": "Draw a two-branch decision diagram with 'Clicked row already selected?' leading to valid selected Actor/Folder rows or only the clicked valid row, followed by one FScopedTransaction and per-target metadata writes.",
+      "final_asset": "assets/media/clicked-row-targets.png"
+    },
+    {
+      "page": "03-selection-and-outliner/matching/TECHNICAL.md",
+      "id": "preset-matching-rules",
+      "kind": "image",
+      "heading": "Enumeration and matching",
+      "caption": "Named presets match by GUID, while custom colors match their stored RGB assignment values.",
+      "capture": "Create a three-column comparison: two visually identical named colors with different GUIDs do not match; the same GUID with recolored RGB does match; two identical C:RRGGBB custom values match. Add a loaded-content boundary indicator.",
+      "final_asset": "assets/media/preset-matching-rules.png"
+    },
+    {
+      "page": "03-selection-and-outliner/clipboard/DESIGN.md",
+      "id": "clipboard-color-workflow",
+      "kind": "gif",
+      "heading": "Reuse a Chroma assignment",
+      "caption": "Copy and Paste preserve a named assignment's identity rather than converting it to a one-off RGB value.",
+      "capture": "Record copying an inherited named preset from one Actor’s Chroma menu, then pasting onto another Actor outside that Folder. Show the destination’s explicit named assignment and swatch afterward.",
+      "final_asset": "assets/media/clipboard-color-workflow.gif"
+    },
+    {
+      "page": "03-selection-and-outliner/clipboard/TECHNICAL.md",
+      "id": "clipboard-format",
+      "kind": "image",
+      "heading": "Clipboard protocol",
+      "caption": "Chroma clipboard values preserve a structured assignment type so paste can validate what it receives.",
+      "capture": "Draw a small flow diagram from Copy effective assignment → text prefix Chroma.V1: → supported payload P:GUID, C:RRGGBB, or N → validation → Paste to selected target. Keep the format labels readable.",
+      "final_asset": "assets/media/clipboard-format.png"
+    },
+    {
+      "page": "03-selection-and-outliner/icon-tint/DESIGN.md",
+      "id": "tinted-native-icons",
+      "kind": "image",
+      "heading": "Make folder organization visible immediately",
+      "caption": "Compatible native Actor and Folder icons can display their inherited or directly assigned Chroma colors.",
+      "capture": "Capture an expanded Outliner with tinted green Environment, orange Gameplay and yellow Lighting icons. Include examples of both Folder icons and different Actor-type icons, with the Chroma swatches visible for comparison.",
+      "final_asset": "assets/media/tinted-native-icons.png"
+    },
+    {
+      "page": "04-viewport/README.md",
+      "id": "viewport-modes-comparison",
+      "kind": "image",
+      "heading": "Typical workflow",
+      "caption": "Chroma displays organizational color through selection outlines and a separate Actor Coloration view mode.",
+      "capture": "Capture a side-by-side comparison of the same scene in normal Lit view with colored selection outlines and in Actor Coloration → Chroma with all supported geometry displayed by assignment. Use matching camera framing.",
+      "final_asset": "assets/media/viewport-modes-comparison.png"
+    },
+    {
+      "page": "04-viewport/outlines/DESIGN.md",
+      "id": "outline-six-colors",
+      "kind": "image",
+      "heading": "Six-color limit",
+      "caption": "Chroma uses up to six extra outline-color slots before falling back to Unreal's ordinary selection outline.",
+      "capture": "Capture seven or more selected Actors with distinct effective Chroma colors in one viewport. Arrange them so the six colored outlines and at least one standard fallback outline are easy to distinguish; retain a visible selected-Actor Outliner list.",
+      "final_asset": "assets/media/outline-six-colors.png"
+    },
+    {
+      "page": "04-viewport/outlines/TECHNICAL.md",
+      "id": "outline-slots-technical",
+      "kind": "image",
+      "heading": "Slot allocation",
+      "caption": "Selection-outline colors are assigned to transient per-view slots without changing saved component properties.",
+      "capture": "Create a diagram of selection outline slots 0–1 reserved for native/subdued outlines and slots 2–7 for Chroma colors. Show unique visible RGB values sharing slots and an overflow actor using the default outline.",
+      "final_asset": "assets/media/outline-slots-technical.png"
+    },
+    {
+      "page": "04-viewport/visualization/DESIGN.md",
+      "id": "visualize-colors-toggle",
+      "kind": "gif",
+      "heading": "Show the whole scene by organization",
+      "caption": "Switching from Lit to Actor Coloration → Chroma makes supported geometry display its effective organizational color.",
+      "capture": "Record opening the viewport view-mode menu from Lit, selecting Actor Coloration → Chroma, briefly orbiting the scene to show flat assignment colors, and switching back to Lit. No materials should be changed during the demonstration.",
+      "final_asset": "assets/media/visualize-colors-toggle.gif"
+    },
+    {
+      "page": "04-viewport/visualization/TECHNICAL.md",
+      "id": "viewport-handler-flow",
+      "kind": "image",
+      "heading": "Primitive color handler registration",
+      "caption": "The editor Actor Coloration handler resolves each rendered component's owner to its effective Chroma color.",
+      "capture": "Create a diagram linking a Primitive Component to its owning Actor, Chroma::ResolveActor, preset/custom/inherited result and the FActorPrimitiveColorHandler output. Show neutral gray for unassigned owners and revision-based refresh.",
+      "final_asset": "assets/media/viewport-handler-flow.png"
+    },
+    {
+      "page": "04-viewport/inspector/DESIGN.md",
+      "id": "hover-inspector-panel",
+      "kind": "image",
+      "heading": "Understand the color under your cursor",
+      "caption": "The Chroma viewport inspector identifies the hovered Actor, its effective color and the source of its assignment.",
+      "capture": "Capture Actor Coloration → Chroma active with the mouse over a mesh. Include the upper-left hover card showing Actor name, color name, hex value and 'Inherited from' or direct-source information; keep the hovered mesh visible.",
+      "final_asset": "assets/media/hover-inspector-panel.png"
+    },
+    {
+      "page": "04-viewport/inspector/DESIGN.md",
+      "id": "hover-inspector-motion",
+      "kind": "gif",
+      "heading": "When the panel updates",
+      "caption": "The inspector updates on ordinary hovering and holds its most recent value during camera navigation or drag interactions.",
+      "capture": "Record hovering two differently colored meshes to update the Chroma inspector, then briefly dragging/navigating the viewport to demonstrate that the card holds its prior readout and resumes on normal hover.",
+      "final_asset": "assets/media/hover-inspector-motion.gif"
+    },
+    {
+      "page": "05-settings-and-support/README.md",
+      "id": "settings-support-map",
+      "kind": "image",
+      "heading": "Typical workflow",
+      "caption": "A shared project palette and per-item assignments use different storage locations during team collaboration.",
+      "capture": "Create a simple diagram showing Config/DefaultChroma.ini (named palette and display options) alongside Actor and Folder packages (explicit assignments), with arrows to the editor's effective colors.",
+      "final_asset": "assets/media/settings-support-map.png"
+    },
+    {
+      "page": "05-settings-and-support/settings/DESIGN.md",
+      "id": "presentation-toggles",
+      "kind": "image",
+      "heading": "Presentation switches",
+      "caption": "Project Settings independently controls tinted Outliner icons and colored viewport selection outlines.",
+      "capture": "Capture Project Settings > Plugins > Chroma with Outliner and Viewport categories expanded. Keep both Tint Outliner Icons and Tint Selection Outlines checkboxes clearly visible and their current enabled defaults indicated.",
+      "final_asset": "assets/media/presentation-toggles.png"
+    },
+    {
+      "page": "05-settings-and-support/saving/TECHNICAL.md",
+      "id": "metadata-package-ownership",
+      "kind": "image",
+      "heading": "Package-owned metadata",
+      "caption": "Chroma saves direct color assignments with Actor, native Folder or legacy level metadata while keeping named palette entries in project configuration.",
+      "capture": "Draw three labeled boxes for Actor Package (Chroma.Assignment.V1), Native UActorFolder Package, and Legacy ULevel (Chroma.Folder.V1/path), with separate Config/DefaultChroma.ini for preset GUID definitions.",
+      "final_asset": "assets/media/metadata-package-ownership.png"
+    },
+    {
+      "page": "05-settings-and-support/saving/DESIGN.md",
+      "id": "save-team-workflow",
+      "kind": "image",
+      "heading": "Perforce and other team tools",
+      "caption": "Sharing Chroma organization requires both changed Actor/Folder packages and the project palette configuration.",
+      "capture": "Capture a source-control change list or Unreal save dialog with an example external Actor package, a Folder/level package when applicable, and Config/DefaultChroma.ini. Use dummy project paths and avoid exposing private depot information.",
+      "final_asset": "assets/media/save-team-workflow.png"
+    },
+    {
+      "page": "05-settings-and-support/troubleshooting/DESIGN.md",
+      "id": "missing-preset-state",
+      "kind": "image",
+      "heading": "Two items look the same but don't match",
+      "caption": "Named palette identity explains why visibly identical colors can represent different selectable organizational groups.",
+      "capture": "Capture the Chroma Project Palette with two named presets intentionally assigned the same RGB value and the Outliner with Actors assigned to each. Show the distinct names or tooltips next to visually matching swatches.",
+      "final_asset": "assets/media/missing-preset-state.png"
+    },
+    {
+      "page": "05-settings-and-support/architecture/TECHNICAL.md",
+      "id": "architecture-map",
+      "kind": "image",
+      "heading": "Key source ownership",
+      "caption": "Chroma separates editor UI, metadata resolution, project preferences, selection-outline rendering and viewport inspection.",
+      "capture": "Create a technical architecture diagram with FChromaModule at the center and branches to FChromaColumn, ChromaState, UChromaSettings, FChromaLabelColumn, FChromaSelectionOutline, FActorPrimitiveColorHandler and SChromaViewportHover. Use distinct colors for storage, UI and rendering.",
+      "final_asset": "assets/media/architecture-map.png"
+    },
+    {
+      "page": "05-settings-and-support/updating/DESIGN.md",
+      "id": "updating-plugin-folder",
+      "kind": "image",
+      "heading": "Updating a precompiled release",
+      "caption": "A complete Chroma plugin directory can be replaced while keeping saved project color assignments in project content and configuration.",
+      "capture": "Show YourProject/Plugins/Chroma as a complete folder in File Explorer next to an example versioned release archive. Include a callout indicating Unreal Editor is closed before replacing the folder.",
+      "final_asset": "assets/media/updating-plugin-folder.png"
+    },
+    {
+      "page": "ROADMAP.md",
+      "id": "roadmap-current-scope",
+      "kind": "image",
+      "heading": "Current release",
+      "caption": "Chroma v1.0.1 includes color assignments, matching-selection workflows, and editor viewport color presentation.",
+      "capture": "Create a three-part current-release summary: Outliner swatch/palette, matching selection and Actor Coloration viewport. Use real Chroma UI captures in each panel. Label all as available in v1.0.1, not planned features.",
+      "final_asset": "assets/media/roadmap-current-scope.png"
+    }
+  ]
+}
