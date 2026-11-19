@@ -4,6 +4,15 @@
 
 ## Current release
 
+<!-- Media target: IMAGE | roadmap-current-scope | docs/assets/media/roadmap-current-scope.png -->
+<figure class="doc-media" data-kind="image" data-media-id="roadmap-current-scope">
+  <img src="assets/media-placeholder.png" alt="Chroma v1.0.1 includes color assignments, matching-selection workflows, and editor viewport color presentation." loading="lazy">
+  <figcaption>Chroma v1.0.1 includes color assignments, matching-selection workflows, and editor viewport color presentation.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Create a three-part current-release summary: Outliner swatch/palette, matching selection and Actor Coloration viewport. Use real Chroma UI captures in each panel. Label all as available in v1.0.1, not planned features.</span>
+  </figcaption>
+</figure>
+
+
 Chroma v1.0.1 provides Actor and Folder color assignment, named project presets, custom colors, folder inheritance, No Color and Clear Override, matching-color selection, clipboard assignment, Outliner icon tint, colored viewport selection outlines, Actor Coloration visualization and a hover inspector.
 
 This is the baseline for the current [Design/Technical manual](README.md). Features listed here are source-reviewed and documented as present; individual project workflows still deserve the testing described in the [Verification Matrix](VERIFICATION_MATRIX.md).

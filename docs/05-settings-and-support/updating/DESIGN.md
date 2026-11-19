@@ -4,6 +4,15 @@
 
 ## Updating a precompiled release
 
+<!-- Media target: IMAGE | updating-plugin-folder | docs/assets/media/updating-plugin-folder.png -->
+<figure class="doc-media" data-kind="image" data-media-id="updating-plugin-folder">
+  <img src="../../assets/media-placeholder.png" alt="A complete Chroma plugin directory can be replaced while keeping saved project color assignments in project content and configuration." loading="lazy">
+  <figcaption>A complete Chroma plugin directory can be replaced while keeping saved project color assignments in project content and configuration.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Show YourProject/Plugins/Chroma as a complete folder in File Explorer next to an example versioned release archive. Include a callout indicating Unreal Editor is closed before replacing the folder.</span>
+  </figcaption>
+</figure>
+
+
 1. Close Unreal Editor.
 2. Download the new **compatible** Chroma plugin package from [Releases](https://github.com/mippi-the-dork/Chroma/releases) if available.
 3. Replace the *complete* `YourProject/Plugins/Chroma/` directory.

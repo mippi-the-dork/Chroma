@@ -12,6 +12,15 @@ Check whether the Actor has a direct color, or an explicit **No Color** assignme
 
 ## Two items look the same but don't match
 
+<!-- Media target: IMAGE | missing-preset-state | docs/assets/media/missing-preset-state.png -->
+<figure class="doc-media" data-kind="image" data-media-id="missing-preset-state">
+  <img src="../../assets/media-placeholder.png" alt="Named palette identity explains why visibly identical colors can represent different selectable organizational groups." loading="lazy">
+  <figcaption>Named palette identity explains why visibly identical colors can represent different selectable organizational groups.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Capture the Chroma Project Palette with two named presets intentionally assigned the same RGB value and the Outliner with Actors assigned to each. Show the distinct names or tooltips next to visually matching swatches.</span>
+  </figcaption>
+</figure>
+
+
 Two named presets can have identical RGB while retaining **different GUID identities**. Use the same named preset when you want one logical group. A custom RGB assignment isn't interchangeable with a similarly colored named preset.
 
 ## Matching selection skips some items

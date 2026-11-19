@@ -8,6 +8,15 @@
 
 ## Key source ownership
 
+<!-- Media target: IMAGE | architecture-map | docs/assets/media/architecture-map.png -->
+<figure class="doc-media" data-kind="image" data-media-id="architecture-map">
+  <img src="../../assets/media-placeholder.png" alt="Chroma separates editor UI, metadata resolution, project preferences, selection-outline rendering and viewport inspection." loading="lazy">
+  <figcaption>Chroma separates editor UI, metadata resolution, project preferences, selection-outline rendering and viewport inspection.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Create a technical architecture diagram with FChromaModule at the center and branches to FChromaColumn, ChromaState, UChromaSettings, FChromaLabelColumn, FChromaSelectionOutline, FActorPrimitiveColorHandler and SChromaViewportHover. Use distinct colors for storage, UI and rendering.</span>
+  </figcaption>
+</figure>
+
+
 - **`ChromaColumn.cpp`**: row target selection, swatch, palette, matching, copy/paste and context menus.
 - **`ChromaState.cpp`**: encoded assignment, `FMetaData` persistence, Undo/Redo and effective Folder resolution.
 - **`ChromaLabelColumn.h`**: native label-column forwarding and compatible icon tint.

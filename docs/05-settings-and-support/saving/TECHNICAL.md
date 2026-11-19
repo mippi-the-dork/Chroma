@@ -4,6 +4,15 @@
 
 ## Package-owned metadata
 
+<!-- Media target: IMAGE | metadata-package-ownership | docs/assets/media/metadata-package-ownership.png -->
+<figure class="doc-media" data-kind="image" data-media-id="metadata-package-ownership">
+  <img src="../../assets/media-placeholder.png" alt="Chroma saves direct color assignments with Actor, native Folder or legacy level metadata while keeping named palette entries in project configuration." loading="lazy">
+  <figcaption>Chroma saves direct color assignments with Actor, native Folder or legacy level metadata while keeping named palette entries in project configuration.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Draw three labeled boxes for Actor Package (Chroma.Assignment.V1), Native UActorFolder Package, and Legacy ULevel (Chroma.Folder.V1/path), with separate Config/DefaultChroma.ini for preset GUID definitions.</span>
+  </figcaption>
+</figure>
+
+
 `Chroma::ActorTarget` uses an Actor metadata key `Chroma.Assignment.V1` in that Actor's owning `UPackage`. `FolderTarget` uses the native `UActorFolder` object when present, else an owning `ULevel` with a path-based metadata key `Chroma.Folder.V1/<path>`.
 
 `Chroma::Read` retrieves `FMetaData::GetValue`. `Chroma::Restore` sets or removes metadata, marks the package dirty and increments a viewport revision counter. No new Actor/Component object is serialized for each assignment.

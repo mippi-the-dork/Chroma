@@ -6,6 +6,15 @@ Start troubleshooting by checking whether an Actor or Folder is loaded, whether 
 
 ## Typical workflow
 
+<!-- Media target: IMAGE | settings-support-map | docs/assets/media/settings-support-map.png -->
+<figure class="doc-media" data-kind="image" data-media-id="settings-support-map">
+  <img src="../assets/media-placeholder.png" alt="A shared project palette and per-item assignments use different storage locations during team collaboration." loading="lazy">
+  <figcaption>A shared project palette and per-item assignments use different storage locations during team collaboration.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Create a simple diagram showing Config/DefaultChroma.ini (named palette and display options) alongside Actor and Folder packages (explicit assignments), with arrows to the editor's effective colors.</span>
+  </figcaption>
+</figure>
+
+
 Set up named colors in Project Settings, apply them to loaded Actors/Folders, save the affected packages and Config/DefaultChroma.ini, and verify the level after reload.
 
 ## Topics

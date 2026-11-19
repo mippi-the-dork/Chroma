@@ -20,6 +20,15 @@ Choose names that help your team identify organizational roles. Rename and recol
 
 ## Presentation switches
 
+<!-- Media target: IMAGE | presentation-toggles | docs/assets/media/presentation-toggles.png -->
+<figure class="doc-media" data-kind="image" data-media-id="presentation-toggles">
+  <img src="../../assets/media-placeholder.png" alt="Project Settings independently controls tinted Outliner icons and colored viewport selection outlines." loading="lazy">
+  <figcaption>Project Settings independently controls tinted Outliner icons and colored viewport selection outlines.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Capture Project Settings &gt; Plugins &gt; Chroma with Outliner and Viewport categories expanded. Keep both Tint Outliner Icons and Tint Selection Outlines checkboxes clearly visible and their current enabled defaults indicated.</span>
+  </figcaption>
+</figure>
+
+
 Disabling **Tint Outliner Icons** restores normal compatible icons without removing Chroma color assignments. Disabling **Tint Selection Outlines** restores ordinary viewport outlines, also without removing assignments.
 
 The separate **Actor Coloration → Chroma** view mode is selected from the viewport; it's not one of these two setting toggles.

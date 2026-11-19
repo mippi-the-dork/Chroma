@@ -17,6 +17,15 @@ Named presets and presentation preferences are saved through Chroma's **project 
 
 ## Perforce and other team tools
 
+<!-- Media target: IMAGE | save-team-workflow | docs/assets/media/save-team-workflow.png -->
+<figure class="doc-media" data-kind="image" data-media-id="save-team-workflow">
+  <img src="../../assets/media-placeholder.png" alt="Sharing Chroma organization requires both changed Actor/Folder packages and the project palette configuration." loading="lazy">
+  <figcaption>Sharing Chroma organization requires both changed Actor/Folder packages and the project palette configuration.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Capture a source-control change list or Unreal save dialog with an example external Actor package, a Folder/level package when applicable, and Config/DefaultChroma.ini. Use dummy project paths and avoid exposing private depot information.</span>
+  </figcaption>
+</figure>
+
+
 Share the affected packages and config through your usual source-control workflow. Chroma does not automatically check files out, submit revisions, synchronize collaborators or resolve file conflicts.
 
 Under **One File Per Actor**, changing an Actor's explicit Chroma assignment may dirty that Actor's external package. A Folder color change may be stored with a native Folder or level package depending on the project.
