@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090c11">
+<meta name="description" content="Source-verified Chroma World Outliner color organization documentation for Unreal Engine.">
+<title>Chroma // Documentation v1.0.1</title>
+<link rel="icon" type="image/svg+xml" href="assets/chroma-icon.svg">
+<link rel="stylesheet" href="docs.css?v=1.0">
+</head>
+<body>
+<a class="skip" href="#content">Skip to documentation</a>
+<header class="topbar">
+  <div class="brand">
+    <button id="menu" class="menu" type="button" aria-label="Toggle documentation navigation" aria-expanded="false">☰</button>
+    <a href="./" class="brand-link"><span class="brand-mark"><img src="assets/chroma-icon.svg" alt="" aria-hidden="true"></span><span><strong>CHROMA // DOCUMENTATION</strong><small>OUTLINER COLOR ORGANIZATION</small></span></a>
+    <span class="baseline" id="docs-version">v1.0.1 DOCUMENTED</span>
+  </div>
+  <div class="top-actions">
+    <div class="search-wrap">
+      <label class="sr" for="search">Search documentation</label>
+      <input id="search" type="search" autocomplete="off" spellcheck="false" placeholder="Search documentation">
+      <kbd>/</kbd>
+      <div id="results" class="results" hidden></div>
+    </div>
+    <a href="https://mippi-the-dork.github.io/" class="top-link" target="_blank" rel="noopener">PORTFOLIO</a>
+    <a href="https://github.com/mippi-the-dork/Chroma/tree/main/docs" class="top-link" target="_blank" rel="noopener">GITHUB</a>
+  </div>
+</header>
+
+<div class="layout">
+  <aside id="sidebar" class="sidebar"><nav id="nav"></nav></aside>
+  <button id="scrim" class="scrim" type="button" aria-label="Close navigation" hidden></button>
+
+  <main id="content" class="main" tabindex="-1">
+    <div class="content-inner">
+      <div class="pagebar">
+        <nav id="crumbs" class="crumbs" aria-label="Breadcrumb"></nav>
+        <div class="page-actions">
+          <div id="kind-switch" class="kind-switch" hidden></div>
+          <a id="source" class="source" href="#" target="_blank" rel="noopener">VIEW SOURCE ↗</a>
+        </div>
+      </div>
+      <article id="article" class="markdown"><div class="loading">LOADING DOCUMENTATION</div></article>
+      <nav id="pager" class="pager" aria-label="Previous and next pages"></nav>
+    </div>
+  </main>
+
+  <aside class="toc"><div class="toc-inner"><b>ON THIS PAGE</b><nav id="toc"></nav></div></aside>
+</div>
+
+<div id="fatal" class="fatal" hidden>
+  <strong>DOCUMENTATION RUNTIME ERROR</strong>
+  <p id="fatal-copy"></p>
+  <a href="README.md">Open Markdown source</a>
+</div>
+
+<script src="vendor/showdown.min.js?v=2.1.0"></script>
+<script src="vendor/purify.min.js?v=3.2.4"></script>
+<script src="docs.js?v=1.0"></script>
+</body>
+</html>
