@@ -27,6 +27,10 @@ Right-click a compatible Actor and open **Chroma → Color and Selection**. The 
 
 For **Folder** coloring, use its swatch directly in the World Outliner. Right-clicking the swatch itself opens a compact action-oriented menu.
 
+## Copying an uncolored item
+
+When an item's effective assignment is empty, Copy places the explicit **No Color** value on the clipboard. Pasting that value into a colored Folder therefore **blocks inheritance** at the destination rather than clearing its override. Use **Clear Override** if the destination should instead inherit its Folder color.
+
 ## Clipboard behavior
 
 Only a recognizable Chroma-formatted clipboard value enables Paste. Ordinary copied text isn't treated as a color assignment.
