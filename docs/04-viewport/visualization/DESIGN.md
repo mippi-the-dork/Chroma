@@ -4,6 +4,15 @@
 
 ## Show the whole scene by organization
 
+<!-- Media target: GIF | visualize-colors-toggle | docs/assets/media/visualize-colors-toggle.gif -->
+<figure class="doc-media" data-kind="gif" data-media-id="visualize-colors-toggle">
+  <img src="../../assets/media-placeholder.png" alt="Switching from Lit to Actor Coloration → Chroma makes supported geometry display its effective organizational color." loading="lazy">
+  <figcaption>Switching from Lit to Actor Coloration → Chroma makes supported geometry display its effective organizational color.
+    <span class="media-capture-instructions"><strong>Capture instructions · GIF:</strong> Record opening the viewport view-mode menu from Lit, selecting Actor Coloration → Chroma, briefly orbiting the scene to show flat assignment colors, and switching back to Lit. No materials should be changed during the demonstration.</span>
+  </figcaption>
+</figure>
+
+
 From the viewport's view-mode menu—usually labeled **Lit**—choose **Actor Coloration → Chroma**. Supported Actor geometry displays its effective Chroma assignment as a flat organizational color.
 
 Unassigned content appears neutral gray. A mesh inheriting Green from its Environment folder displays Green; a Red direct override displays Red.

@@ -14,6 +14,15 @@ The most important rule is **whether the clicked row is already part of the curr
 
 ## Example: color several props
 
+<!-- Media target: GIF | batch-coloring | docs/assets/media/batch-coloring.gif -->
+<figure class="doc-media" data-kind="gif" data-media-id="batch-coloring">
+  <img src="../../assets/media-placeholder.png" alt="Color assignment applies to the compatible current selection when the clicked swatch belongs to that selection." loading="lazy">
+  <figcaption>Color assignment applies to the compatible current selection when the clicked swatch belongs to that selection.
+    <span class="media-capture-instructions"><strong>Capture instructions · GIF:</strong> Record three or more selected Actor rows with mixed initial colors, open the Chroma menu from one selected row, and assign a single named preset. Show the Multiple colors readout before and uniform color afterward.</span>
+  </figcaption>
+</figure>
+
+
 1. Select four Actor rows in the World Outliner.
 2. Click the Chroma swatch on one of those selected rows.
 3. Choose a named preset, such as Environment.

@@ -10,6 +10,15 @@ The feature is enabled by default. To disable it, open **Project Settings → Pl
 
 ## Six-color limit
 
+<!-- Media target: IMAGE | outline-six-colors | docs/assets/media/outline-six-colors.png -->
+<figure class="doc-media" data-kind="image" data-media-id="outline-six-colors">
+  <img src="../../assets/media-placeholder.png" alt="Chroma uses up to six extra outline-color slots before falling back to Unreal's ordinary selection outline." loading="lazy">
+  <figcaption>Chroma uses up to six extra outline-color slots before falling back to Unreal's ordinary selection outline.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Capture seven or more selected Actors with distinct effective Chroma colors in one viewport. Arrange them so the six colored outlines and at least one standard fallback outline are easy to distinguish; retain a visible selected-Actor Outliner list.</span>
+  </figcaption>
+</figure>
+
+
 Chroma can use up to **six distinct extra outline-color slots at once**, when those slots are available. If more colors are selected, additional items use Unreal's normal selection outline. Other tools' explicitly assigned color slots can reduce the remaining capacity.
 
 Actors sharing the same displayed Chroma color share one outline slot—even if the Actors have different assignments that happen to resolve to the same visible RGB color.

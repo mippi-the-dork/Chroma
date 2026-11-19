@@ -4,6 +4,15 @@
 
 ## Selection targeting
 
+<!-- Media target: IMAGE | clicked-row-targets | docs/assets/media/clicked-row-targets.png -->
+<figure class="doc-media" data-kind="image" data-media-id="clicked-row-targets">
+  <img src="../../assets/media-placeholder.png" alt="The clicked item decides whether Chroma resolves the whole selection or a single target." loading="lazy">
+  <figcaption>The clicked item decides whether Chroma resolves the whole selection or a single target.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Draw a two-branch decision diagram with 'Clicked row already selected?' leading to valid selected Actor/Folder rows or only the clicked valid row, followed by one FScopedTransaction and per-target metadata writes.</span>
+  </figcaption>
+</figure>
+
+
 `FChromaColumn::Targets` determines `SelectedClick` by comparing `GetSelectedItems()` IDs with the clicked row. A selected click builds a list of valid `FTarget` entries from selected items; an unselected click returns only the clicked valid target.
 
 The context menu has a separate `ContextItems` path supplied by `MakeActorContextMenu`. It uses the selected Actors from an Outliner menu context when available, otherwise native editor Actor selection/viewport hit proxy.

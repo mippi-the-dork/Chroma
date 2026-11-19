@@ -4,6 +4,15 @@
 
 ## Clipboard protocol
 
+<!-- Media target: IMAGE | clipboard-format | docs/assets/media/clipboard-format.png -->
+<figure class="doc-media" data-kind="image" data-media-id="clipboard-format">
+  <img src="../../assets/media-placeholder.png" alt="Chroma clipboard values preserve a structured assignment type so paste can validate what it receives." loading="lazy">
+  <figcaption>Chroma clipboard values preserve a structured assignment type so paste can validate what it receives.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Draw a small flow diagram from Copy effective assignment → text prefix Chroma.V1: → supported payload P:GUID, C:RRGGBB, or N → validation → Paste to selected target. Keep the format labels readable.</span>
+  </figcaption>
+</figure>
+
+
 `FPlatformApplicationMisc::ClipboardCopy` writes a string beginning `Chroma.V1:`, followed by the effective assignment. `ClipboardValue` requires that prefix, strips it, decodes the remainder and accepts valid custom/preset representations or explicit `N`.
 
 The palette's Copy action uses `Resolve(Item).Assignment` rather than only the item's direct metadata; an empty effective assignment is normalized to `N` for copying.

@@ -6,6 +6,15 @@ A hover inspector explains where an Actor's color came from. These are editor pr
 
 ## Typical workflow
 
+<!-- Media target: IMAGE | viewport-modes-comparison | docs/assets/media/viewport-modes-comparison.png -->
+<figure class="doc-media" data-kind="image" data-media-id="viewport-modes-comparison">
+  <img src="../assets/media-placeholder.png" alt="Chroma displays organizational color through selection outlines and a separate Actor Coloration view mode." loading="lazy">
+  <figcaption>Chroma displays organizational color through selection outlines and a separate Actor Coloration view mode.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Capture a side-by-side comparison of the same scene in normal Lit view with colored selection outlines and in Actor Coloration → Chroma with all supported geometry displayed by assignment. Use matching camera framing.</span>
+  </figcaption>
+</figure>
+
+
 Assign colors to several meshes, select them to inspect colored outlines, then switch the viewport from Lit to Actor Coloration → Chroma to see all supported geometry by color.
 
 ## Topics

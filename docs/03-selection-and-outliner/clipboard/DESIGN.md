@@ -4,6 +4,15 @@
 
 ## Reuse a Chroma assignment
 
+<!-- Media target: GIF | clipboard-color-workflow | docs/assets/media/clipboard-color-workflow.gif -->
+<figure class="doc-media" data-kind="gif" data-media-id="clipboard-color-workflow">
+  <img src="../../assets/media-placeholder.png" alt="Copy and Paste preserve a named assignment's identity rather than converting it to a one-off RGB value." loading="lazy">
+  <figcaption>Copy and Paste preserve a named assignment's identity rather than converting it to a one-off RGB value.
+    <span class="media-capture-instructions"><strong>Capture instructions · GIF:</strong> Record copying an inherited named preset from one Actor’s Chroma menu, then pasting onto another Actor outside that Folder. Show the destination’s explicit named assignment and swatch afterward.</span>
+  </figcaption>
+</figure>
+
+
 Open the source item's Chroma menu and choose **Copy Chroma Color**. Then open a destination menu and choose **Paste Chroma Color**. Named assignments retain the same named preset identity rather than becoming an unrelated custom RGB value.
 
 Paste uses the same selected-row rule as ordinary color assignment: if the clicked row is selected, compatible selected targets receive the paste; if it isn't, only the clicked item changes.

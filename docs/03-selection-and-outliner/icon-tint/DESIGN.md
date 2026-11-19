@@ -4,6 +4,15 @@
 
 ## Make folder organization visible immediately
 
+<!-- Media target: IMAGE | tinted-native-icons | docs/assets/media/tinted-native-icons.png -->
+<figure class="doc-media" data-kind="image" data-media-id="tinted-native-icons">
+  <img src="../../assets/media-placeholder.png" alt="Compatible native Actor and Folder icons can display their inherited or directly assigned Chroma colors." loading="lazy">
+  <figcaption>Compatible native Actor and Folder icons can display their inherited or directly assigned Chroma colors.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Capture an expanded Outliner with tinted green Environment, orange Gameplay and yellow Lighting icons. Include examples of both Folder icons and different Actor-type icons, with the Chroma swatches visible for comparison.</span>
+  </figcaption>
+</figure>
+
+
 With **Tint Outliner Icons** enabled, compatible native Actor and Folder icons reflect their **effective Chroma color**. A folder colored Green can tint the icons of its inheriting Actors, while a nested Yellow override changes its branch.
 
 The label text stays readable and native icons still communicate their normal Actor or Folder type. Chroma does not replace the built-in label behavior with a separate custom name widget.

@@ -6,6 +6,15 @@ The clicked row determines scope: when it belongs to the current selection, Chro
 
 ## Typical workflow
 
+<!-- Media target: IMAGE | selection-workflow-overview | docs/assets/media/selection-workflow-overview.png -->
+<figure class="doc-media" data-kind="image" data-media-id="selection-workflow-overview">
+  <img src="../assets/media-placeholder.png" alt="Chroma uses the clicked row's selection state to distinguish single-item changes from batch operations." loading="lazy">
+  <figcaption>Chroma uses the clicked row's selection state to distinguish single-item changes from batch operations.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Capture an Outliner with several selected Actors and one unselected Actor. Highlight a swatch on a selected row and visually annotate that it targets the selected set, whereas the unselected row’s swatch affects only that row.</span>
+  </figcaption>
+</figure>
+
+
 Select a Gameplay-colored Actor and choose Select Matching Color to collect every loaded Actor with the same preset identity. Shift adds results to the existing selection.
 
 ## Topics

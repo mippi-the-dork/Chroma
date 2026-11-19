@@ -10,6 +10,15 @@ The extension uses extra selection color indexes **2 through 7**, reserving norm
 
 ## Slot allocation
 
+<!-- Media target: IMAGE | outline-slots-technical | docs/assets/media/outline-slots-technical.png -->
+<figure class="doc-media" data-kind="image" data-media-id="outline-slots-technical">
+  <img src="../../assets/media-placeholder.png" alt="Selection-outline colors are assigned to transient per-view slots without changing saved component properties." loading="lazy">
+  <figcaption>Selection-outline colors are assigned to transient per-view slots without changing saved component properties.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Create a diagram of selection outline slots 0–1 reserved for native/subdued outlines and slots 2–7 for Chroma colors. Show unique visible RGB values sharing slots and an overflow actor using the default outline.</span>
+  </figcaption>
+</figure>
+
+
 Colors are grouped by the displayed sRGB color value, not by preset GUID, for rendering purposes. Up to six non-conflicting slots can be assigned; overflow remains at native outline rendering. Chroma's view extension supplies the per-view palette.
 
 ## Renderer state
