@@ -10,6 +10,15 @@ Custom colors are stored as color values. Unlike named presets, they **do not fo
 
 ## Used in This Level
 
+<!-- Media target: IMAGE | used-colors-menu | docs/assets/media/used-colors-menu.png -->
+<figure class="doc-media" data-kind="image" data-media-id="used-colors-menu">
+  <img src="../../assets/media-placeholder.png" alt="The Used in This Level section offers quick access to colors already assigned to loaded items." loading="lazy">
+  <figcaption>The Used in This Level section offers quick access to colors already assigned to loaded items.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Capture the Chroma menu with Used in This Level (loaded items) expanded or fully visible, showing multiple entries. Include a custom color and at least one named preset, and enough Outliner context to identify the source row.</span>
+  </figcaption>
+</figure>
+
+
 The palette includes **Used in This Level (loaded items)**. This list collects colors currently used by loaded Actors and Folders, making it easy to reuse a color already present in the open editor world.
 
 This is not the same as the project named palette. A used color can be custom or refer to a named preset, and the list depends on what is loaded.

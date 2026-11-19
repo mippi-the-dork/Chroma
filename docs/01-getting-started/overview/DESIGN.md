@@ -4,6 +4,15 @@
 
 ## The core idea
 
+<!-- Media target: IMAGE | outliner-color-categories | docs/assets/media/outliner-color-categories.png -->
+<figure class="doc-media" data-kind="image" data-media-id="outliner-color-categories">
+  <img src="../../assets/media-placeholder.png" alt="Chroma adds a compact color swatch beside Actors and Folders so a level's organization is visible at a glance." loading="lazy">
+  <figcaption>Chroma adds a compact color swatch beside Actors and Folders so a level's organization is visible at a glance.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Capture the Unreal World Outliner with at least three named folders (Environment, Gameplay, Lighting), differently colored child Actors, and Chroma’s swatch column immediately before Item Label. Show the viewport alongside the Outliner for context.</span>
+  </figcaption>
+</figure>
+
+
 World Outliner folders organize *where things live*, and Actor names describe *what they are*. Chroma adds a third signal: **what a thing belongs to**. A named color such as Gameplay, Environment or Critical provides context at a glance without renaming or reparenting anything.
 
 ## What you can do

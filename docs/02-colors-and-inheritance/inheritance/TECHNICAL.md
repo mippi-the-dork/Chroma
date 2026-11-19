@@ -4,6 +4,15 @@
 
 ## Folder resolution algorithm
 
+<!-- Media target: IMAGE | folder-resolution-chain | docs/assets/media/folder-resolution-chain.png -->
+<figure class="doc-media" data-kind="image" data-media-id="folder-resolution-chain">
+  <img src="../../assets/media-placeholder.png" alt="Effective color is resolved from the nearest explicit assignment in an Actor's containing folder hierarchy." loading="lazy">
+  <figcaption>Effective color is resolved from the nearest explicit assignment in an Actor's containing folder hierarchy.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Draw a simple Actor → containing Folder → parent Folder chain with a direct Actor value checked first. Show the search stopping at the first nonempty assignment, including N as a stop condition; distinguish Actor attachments from Folder paths.</span>
+  </figcaption>
+</figure>
+
+
 `Chroma::ResolveFolder(UWorld*, FFolder)` loops through the supplied Folder and its `GetParent()` chain. The first nonempty stored value is decoded into `FChromaResolvedColor`; `bInherited` records whether the resolution climbed to a parent, and `Source` holds the folder path.
 
 `ResolveActor` first checks the Actor's metadata. Only when no direct value is present does it call `ResolveFolder(Actor->GetWorld(), Actor->GetFolder())`, marking the resolved value inherited when appropriate.

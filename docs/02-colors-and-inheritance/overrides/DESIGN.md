@@ -12,6 +12,15 @@
 
 ## Workflow: temporarily override an item
 
+<!-- Media target: GIF | clear-versus-no-color | docs/assets/media/clear-versus-no-color.gif -->
+<figure class="doc-media" data-kind="gif" data-media-id="clear-versus-no-color">
+  <img src="../../assets/media-placeholder.png" alt="Clear Override restores inherited color, while No Color intentionally blocks the inherited result." loading="lazy">
+  <figcaption>Clear Override restores inherited color, while No Color intentionally blocks the inherited result.
+    <span class="media-capture-instructions"><strong>Capture instructions · GIF:</strong> Record one Actor inside a Green Folder. Assign Red, choose Clear Override to return to Green, choose No Color to become uncolored, then Clear Override again. Keep the same row and swatch visible throughout.</span>
+  </figcaption>
+</figure>
+
+
 1. Give the parent folder Green.
 2. Select a child Actor and assign Red. This is a **direct override**.
 3. Choose **Clear Override** on the child. Green returns because the folder remains Green.

@@ -10,6 +10,15 @@
 
 ## Encoded states
 
+<!-- Media target: IMAGE | assignment-data-flow | docs/assets/media/assignment-data-flow.png -->
+<figure class="doc-media" data-kind="image" data-media-id="assignment-data-flow">
+  <img src="../../assets/media-placeholder.png" alt="An assignment is encoded as a preset reference, custom RGB value, No Color marker or absence of an override." loading="lazy">
+  <figcaption>An assignment is encoded as a preset reference, custom RGB value, No Color marker or absence of an override.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Create a compact diagram: Outliner swatch/menu → target selection → metadata Write/Undo → encoded assignment choices P:GUID, C:RRGGBB, N and empty. Differentiate direct storage from effective resolution.</span>
+  </figcaption>
+</figure>
+
+
 `Chroma::ActorTarget` maps a valid editor Actor to metadata key `Chroma.Assignment.V1`. `FolderTarget` maps native `UActorFolder` objects similarly or falls back to owning level metadata using `Chroma.Folder.V1/` plus the folder path for legacy folders.
 
 Assignments are encoded as a preset GUID (`P:`), an opaque custom-color string (`C:` + six hex digits), explicit No Color (`N`), or an empty value meaning no direct assignment.

@@ -8,6 +8,15 @@ You can install Chroma through **Fab when listed**, a matching precompiled GitHu
 
 ### Installing a release
 
+<!-- Media target: IMAGE | install-folder | docs/assets/media/install-folder.png -->
+<figure class="doc-media" data-kind="image" data-media-id="install-folder">
+  <img src="../../assets/media-placeholder.png" alt="The complete Chroma plugin folder belongs directly under a project's Plugins directory." loading="lazy">
+  <figcaption>The complete Chroma plugin folder belongs directly under a project's Plugins directory.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Show Windows File Explorer displaying YourProject/Plugins/Chroma/ with Chroma.uplugin, Config, Doc, Resources and Source visible. Include the breadcrumb/address bar so the directory depth is clear.</span>
+  </figcaption>
+</figure>
+
+
 1. Close Unreal Editor.
 2. Choose a ZIP compatible with your engine and platform from [Chroma Releases](https://github.com/mippi-the-dork/Chroma/releases).
 3. Extract the full **Chroma** folder under `YourProject/Plugins/`, placing `Chroma.uplugin` at `YourProject/Plugins/Chroma/Chroma.uplugin`.

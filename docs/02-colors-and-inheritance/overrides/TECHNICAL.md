@@ -4,6 +4,15 @@
 
 ## Values and decoding
 
+<!-- Media target: IMAGE | override-encoding | docs/assets/media/override-encoding.png -->
+<figure class="doc-media" data-kind="image" data-media-id="override-encoding">
+  <img src="../../assets/media-placeholder.png" alt="The empty assignment and explicit No Color value follow different resolution paths." loading="lazy">
+  <figcaption>The empty assignment and explicit No Color value follow different resolution paths.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Create a comparison diagram of two otherwise identical Actors beneath a Green Folder: one with empty direct metadata inherits Green; the other with N returns No Color. Show P:GUID and C:RRGGBB as explicit overrides.</span>
+  </figcaption>
+</figure>
+
+
 Chroma stores four assignment forms: empty string (no explicit assignment), `N` (No Color), `P:<GUID>` (named preset), and `C:<RRGGBB>` (custom color). `Chroma::Decode` returns the resolved state, including `bHasColor`, `bMissingPreset` and `Assignment`.
 
 The menu's **Clear Override** calls `Assign(Batch, FString())` to remove the metadata value, letting `ResolveActor`/ `ResolveFolder` resume traversal. **No Color** calls `Assign(Batch, TEXT("N"))`; this is a nonempty stored value, so hierarchy traversal stops there.

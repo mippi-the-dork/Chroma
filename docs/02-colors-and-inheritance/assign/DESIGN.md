@@ -4,6 +4,15 @@
 
 ## Use the Outliner swatch
 
+<!-- Media target: IMAGE | palette-menu-anatomy | docs/assets/media/palette-menu-anatomy.png -->
+<figure class="doc-media" data-kind="image" data-media-id="palette-menu-anatomy">
+  <img src="../../assets/media-placeholder.png" alt="The Chroma palette combines used colors, reusable presets, custom color creation and assignment commands." loading="lazy">
+  <figcaption>The Chroma palette combines used colors, reusable presets, custom color creation and assignment commands.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Capture a Chroma swatch menu expanded in a real World Outliner. Include Current Color, Used in This Level, Project Palette, Custom Color, Edit Named Colors, Clear Override and No Color in readable view; if menu is too tall use two connected stills.</span>
+  </figcaption>
+</figure>
+
+
 Click the Chroma swatch next to an Actor or Folder. The palette shows **Current Color**, **Used in This Level (loaded items)**, the shared **Project Palette**, **Custom Color...** and useful commands.
 
 Choose a named preset to give the item a stable project-defined color. Choose Custom Color when you want a one-off RGB color. The swatch immediately reflects the effective result.

@@ -6,6 +6,15 @@ Color organization follows **folder hierarchy**, not Actor attachments. New Acto
 
 ## Typical workflow
 
+<!-- Media target: IMAGE | color-state-overview | docs/assets/media/color-state-overview.png -->
+<figure class="doc-media" data-kind="image" data-media-id="color-state-overview">
+  <img src="../assets/media-placeholder.png" alt="Chroma distinguishes direct colors, inherited colors and deliberate No Color assignments within one hierarchy." loading="lazy">
+  <figcaption>Chroma distinguishes direct colors, inherited colors and deliberate No Color assignments within one hierarchy.
+    <span class="media-capture-instructions"><strong>Capture instructions · Image:</strong> Capture an expanded Outliner hierarchy with a Green Environment folder, two inheriting Actors, a Red overridden Actor, and a No Color child branch. Label which states are direct, inherited and explicit suppression.</span>
+  </figcaption>
+</figure>
+
+
 Give an Environment folder Green, assign a critical Actor a Red override, then use Clear Override to return to Green. Use No Color to intentionally stop the inheritance.
 
 ## Topics
