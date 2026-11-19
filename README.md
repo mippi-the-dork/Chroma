@@ -1,138 +1,144 @@
 # Chroma
 
-**Give your Unreal Engine levels a color language.**
+**World Outliner Color Organization for Unreal Engine**
 
-Organize Actors and Folders with meaningful colors directly in the World Outliner. Find related content faster, recognize important objects at a glance, and see your level's organization in the viewport—without changing the materials, transforms, or gameplay of the Actors you're working with.
+**Make large levels easier to read, navigate, and understand at a glance.**
 
-![Chroma — color organization for Unreal Engine's World Outliner](Doc/Images/Chroma-Hero.png)
+Chroma adds meaningful color organization to Unreal Engine's **World Outliner**. Give Actors and Folders recognizable colors, inherit them through folder hierarchies, select related content by color, and see your organization in the viewport—all without changing the gameplay or materials of the content you're working on.
 
-[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.8.x-black?logo=unrealengine)](https://www.unrealengine.com/) [![Platform](https://img.shields.io/badge/Platform-Win64-blue)](https://github.com/mippi-the-dork/Chroma) ![Editor Only](https://img.shields.io/badge/Plugin-Editor%20Only-green) ![Version](https://img.shields.io/badge/Version-1.0.1-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.8.x-black?logo=unrealengine)](https://www.unrealengine.com/) ![Platform](https://img.shields.io/badge/Platform-Win64-blue) ![Editor Only](https://img.shields.io/badge/Plugin-Editor%20Only-217346) ![Version](https://img.shields.io/badge/Chroma-v1.0.1-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+<p align="center">
+  <img src="Doc/Images/Chroma-Hero.png" alt="Chroma color organization in the Unreal Engine World Outliner" width="100%">
+</p>
 
 ---
 
-## Your Outliner tells you where things are. Chroma shows you what they belong to.
+## Your level should be easier to understand
 
-A large level can have hundreds or thousands of Actors. Even with folders and sensible names, visually separating environment art from gameplay, lighting, audio, and objects that deserve special attention takes work.
+Large World Outliners can become difficult to scan. Folders tell you where Actors belong, and names describe what they are, but neither makes it easy to visually separate gameplay objects from environment art, lighting, audio, or content that needs attention.
 
-Chroma adds a small, familiar **color swatch next to each Actor or Folder**. Assign a named project color, give a particular item its own override, or let an entire folder hierarchy inherit a shared color.
+**Chroma adds another layer of information without changing your level's structure.**
 
-For example, you might use **Green** for Environment, **Orange** for Gameplay, **Yellow** for Lighting, **Purple** for Audio, **Blue** for Player, and **Red** for Critical content. They're your categories, not hardcoded rules.
+- **Recognize content at a glance.** Give Actors and Folders meaningful colors right in the Outliner.
+- **Organize entire branches at once.** Folder colors flow down to nested folders and Actors, including new content added later.
+- **Keep exceptions intentional.** Override a color for a specific item, clear the override to inherit again, or use No Color to stop inheritance.
+- **Find related work faster.** Select loaded items by matching color—even when names and folders differ.
+- **See the organization in your scene.** Use colored selection outlines and Actor Coloration to inspect supported geometry directly in the editor viewport.
 
-**The result:** a more readable World Outliner, faster visual identification, and a shared way for your team to understand a level.
+<p align="center">
+  <img src="Doc/Images/Chroma-Settings.png" alt="Chroma project color palette and display settings in Unreal Engine" width="860">
+</p>
 
-## See Chroma in action
+## Explore the documentation
 
-### Color a folder. Organize everything inside it.
+> ### [**Chroma Documentation — Full User Guide and Technical Reference**](https://mippi-the-dork.github.io/Chroma/)
+>
+> **Everything you need to learn and use Chroma, in one place.** Follow setup and first-use workflows, learn the exact color assignment and inheritance rules, explore selection and viewport tools, or look up saving, troubleshooting, and implementation details.
+>
+> **[Get Started](https://mippi-the-dork.github.io/Chroma/?page=01-getting-started%2FREADME.md)** · **[Colors & Inheritance](https://mippi-the-dork.github.io/Chroma/?page=02-colors-and-inheritance%2FREADME.md)** · **[Selection & Outliner](https://mippi-the-dork.github.io/Chroma/?page=03-selection-and-outliner%2FREADME.md)** · **[Viewport Presentation](https://mippi-the-dork.github.io/Chroma/?page=04-viewport%2FREADME.md)** · **[Settings & Support](https://mippi-the-dork.github.io/Chroma/?page=05-settings-and-support%2FREADME.md)**
 
-Assign a color to an Actor or Folder with a click. Folders pass their color down to their contents and nested folders until an item chooses a different color. Even new Actors placed in that folder inherit its color.
+The README is an overview of what Chroma offers. **The [documentation website](https://mippi-the-dork.github.io/Chroma/) is the maintained reference for exact behavior, installation, workflows, and technical details.**
 
-![Assigning Chroma colors to Actors and Folders](Doc/Images/Chroma-Assigning-Colors.gif)
+## One color system. Several useful workflows.
 
-*Assign named or custom colors from the World Outliner without leaving your normal editing workflow.*
+All of Chroma's organizational features work through the same color assignments. Named project presets can represent your team's categories, while custom colors provide one-off exceptions.
 
-![Chroma Folder inheritance in the World Outliner](Doc/Images/Chroma-Inheritance.gif)
+| Capability | What it helps you do |
+| --- | --- |
+| **[Actor & Folder Colors](https://mippi-the-dork.github.io/Chroma/?page=02-colors-and-inheritance%2Fassign%2FDESIGN.md)** | Assign a color directly from a compact World Outliner swatch. |
+| **[Named Project Palette](https://mippi-the-dork.github.io/Chroma/?page=02-colors-and-inheritance%2Fpalette%2FDESIGN.md)** | Give colors consistent names and identities that stay connected when a preset is renamed or recolored. |
+| **[Folder Inheritance](https://mippi-the-dork.github.io/Chroma/?page=02-colors-and-inheritance%2Finheritance%2FDESIGN.md)** | Color a whole folder hierarchy automatically, including newly added Actors. |
+| **[Overrides & No Color](https://mippi-the-dork.github.io/Chroma/?page=02-colors-and-inheritance%2Foverrides%2FDESIGN.md)** | Make exceptions without losing the ability to return to an inherited color. |
+| **[Custom & Used Colors](https://mippi-the-dork.github.io/Chroma/?page=02-colors-and-inheritance%2Fcustom-and-used%2FDESIGN.md)** | Pick an individual RGB color or reuse one already present in loaded level content. |
+| **[Multi-Selection Editing](https://mippi-the-dork.github.io/Chroma/?page=03-selection-and-outliner%2Fbatch%2FDESIGN.md)** | Apply a color to compatible selected Actors and Folders with one action. |
+| **[Matching Selection](https://mippi-the-dork.github.io/Chroma/?page=03-selection-and-outliner%2Fmatching%2FDESIGN.md)** | Select loaded content sharing a named preset or custom color, across the level or among siblings. |
+| **[Copy & Paste](https://mippi-the-dork.github.io/Chroma/?page=03-selection-and-outliner%2Fclipboard%2FDESIGN.md)** | Reuse assignments while preserving named preset identity. |
+| **[Tinted Outliner Icons](https://mippi-the-dork.github.io/Chroma/?page=03-selection-and-outliner%2Ficon-tint%2FDESIGN.md)** | Display effective colors on compatible native Actor and Folder icons. |
+| **[Colored Selection Outlines](https://mippi-the-dork.github.io/Chroma/?page=04-viewport%2Foutlines%2FDESIGN.md)** | Identify differently colored selected Actors right in the viewport. |
+| **[Actor Coloration](https://mippi-the-dork.github.io/Chroma/?page=04-viewport%2Fvisualization%2FDESIGN.md)** | View supported level geometry in its effective organizational color instead of its normal material appearance. |
+| **[Viewport Color Inspector](https://mippi-the-dork.github.io/Chroma/?page=04-viewport%2Finspector%2FDESIGN.md)** | Hover supported geometry to see the Actor, its color, and where that color came from. |
 
-*Folder inheritance gives an entire branch a consistent identity while still allowing individual overrides.*
+Chroma stores **editor organization metadata**, not replacement materials or runtime color Components.
 
-Create **named project colors** that represent actual team concepts—not just RGB values. If you rename or recolor a named preset later, its assigned items retain the same preset identity. Use a **custom color** for one-off needs, **Clear Override** to resume inheritance, or **No Color** to intentionally block it.
+## Useful in real production workflows
 
-[Explore colors and inheritance](https://mippi-the-dork.github.io/Chroma/?page=02-colors-and-inheritance%2FREADME.md) · [Named Project Palette](https://mippi-the-dork.github.io/Chroma/?page=02-colors-and-inheritance%2Fpalette%2FDESIGN.md) · [Overrides and No Color](https://mippi-the-dork.github.io/Chroma/?page=02-colors-and-inheritance%2Foverrides%2FDESIGN.md)
+### Organize a whole level without coloring every Actor
 
-### Your colors can select things, too.
+Give an **Environment** folder Green and **Gameplay** Orange. Actors inherit their containing folder's color, including new Actors added later. Give an important objective a Red override, then use **Clear Override** whenever it should return to its folder's color.
 
-Color isn't only decorative. Choose **Select Matching Color** to collect loaded Actors and compatible Folder rows that share a color assignment, or **Select Matching Color Among Siblings** to narrow the search to their immediate Outliner parent. Hold **Shift** to add matches to your selection.
+<p align="center">
+  <img src="Doc/Images/Chroma-Inheritance.gif" alt="Chroma folder color inheritance and Actor overrides" width="800">
+</p>
 
-Chroma also supports bulk coloring of selected items, Copy/Paste that preserves named color assignments, and a Chroma submenu in compatible Actor context menus.
+### Select related objects without relying on names
 
-![Selecting Actors with matching Chroma colors](Doc/Images/Chroma-Matching.gif)
+Need every loaded Gameplay-colored Actor, even across different folders? Choose **Select Matching Color**. Restrict the operation to siblings when you only want the matching content under the same immediate Outliner parent.
 
-*Use a shared color assignment to gather related level content without relying on naming conventions.*
+<p align="center">
+  <img src="Doc/Images/Chroma-Matching.gif" alt="Selecting matching colored content in the Unreal Engine World Outliner" width="800">
+</p>
 
-[Matching Selection](https://mippi-the-dork.github.io/Chroma/?page=03-selection-and-outliner%2Fmatching%2FDESIGN.md) · [Multi-Selection Editing](https://mippi-the-dork.github.io/Chroma/?page=03-selection-and-outliner%2Fbatch%2FDESIGN.md) · [Copy and Paste](https://mippi-the-dork.github.io/Chroma/?page=03-selection-and-outliner%2Fclipboard%2FDESIGN.md)
+### See your organizational structure in the viewport
 
-### Make your viewport show the organization.
-
-Chroma can tint compatible **Outliner Actor and Folder icons** and give selected Actors **color-coded selection outlines**. Want to survey the entire level? Switch the viewport to **Actor Coloration → Chroma** and see supported geometry in its effective organizational color.
+Change the viewport from Lit to **Actor Coloration → Chroma** to display supported geometry using its effective color. Hover an Actor to inspect its assignment. Switch back to Lit when you're finished—your materials haven't changed.
 
 | Normal Lit view | Chroma Actor Coloration |
 | :---: | :---: |
-| ![Normal Lit viewport](Doc/Images/Chroma-Lit.png) | ![Chroma color visualization](Doc/Images/Chroma-Visualization.png) |
+| <img src="Doc/Images/Chroma-Lit.png" alt="Level shown with its normal lighting and materials" width="420"> | <img src="Doc/Images/Chroma-Visualization.png" alt="The same level displayed by Chroma organizational color" width="420"> |
 
-*The same scene, viewed through its materials on the left and its organizational colors on the right.*
+### Make selected Actors recognizable
 
-![Chroma-colored editor selection outlines](Doc/Images/Chroma-Selection-Outlines.png)
+Color-coded selection outlines make it easier to distinguish selected content in the viewport. Chroma supports up to **six additional distinct outline colors** when compatible renderer slots are available.
 
-*Selection outlines can reinforce the meaning of colors while you work directly in the level.*
+<p align="center">
+  <img src="Doc/Images/Chroma-Selection-Outlines.png" alt="Selected Unreal Actors with different Chroma-colored selection outlines" width="800">
+</p>
 
-In Chroma visualization mode, the **viewport color inspector** lets you hover supported geometry to see the Actor name, color, hex value, and where that assignment came from.
+[**Explore the viewport tools and their limitations →**](https://mippi-the-dork.github.io/Chroma/?page=04-viewport%2FREADME.md)
 
-[Colored Selection Outlines](https://mippi-the-dork.github.io/Chroma/?page=04-viewport%2Foutlines%2FDESIGN.md) · [Actor Coloration](https://mippi-the-dork.github.io/Chroma/?page=04-viewport%2Fvisualization%2FDESIGN.md) · [Viewport Color Inspector](https://mippi-the-dork.github.io/Chroma/?page=04-viewport%2Finspector%2FDESIGN.md)
+## Get Chroma
 
----
+**Chroma v1.0.1** targets **Unreal Engine 5.8.x on Windows 64-bit** and runs in the **Editor only**. The current repository reports testing on **UE 5.8.2**.
 
-## Full documentation
+Install from a compatible prebuilt release if one is available, use Fab when Chroma is listed there, or build the source as an Unreal Editor plugin. A GitHub-generated source ZIP is not necessarily a precompiled plugin.
 
-### **[Explore the Chroma Documentation Website](https://mippi-the-dork.github.io/Chroma/)**
+**[GitHub Releases](https://github.com/mippi-the-dork/Chroma/releases)** · **[Installation Guide](https://mippi-the-dork.github.io/Chroma/?page=01-getting-started%2Finstall%2FDESIGN.md)** · **[First Color Workflow](https://mippi-the-dork.github.io/Chroma/?page=01-getting-started%2Ffirst-use%2FDESIGN.md)**
 
-The dedicated documentation covers every major feature, step-by-step workflows, source-backed technical behavior, saving and source control, limitations, and troubleshooting. Each topic includes separate **Design** and **Technical** guides, with screenshots and planned visual demonstrations.
+## Important limitations
 
-**Popular starting points**
+Chroma is an **editor organization utility**, not a runtime rendering system, replacement hierarchy, or source-control tool.
 
-| Looking for… | Start here |
-| --- | --- |
-| Installing Chroma | [Installation and Compatibility](https://mippi-the-dork.github.io/Chroma/?page=01-getting-started%2Finstall%2FDESIGN.md) |
-| Getting up and running | [Your First Color Workflow](https://mippi-the-dork.github.io/Chroma/?page=01-getting-started%2Ffirst-use%2FDESIGN.md) |
-| Folder colors, inheritance, and overrides | [Colors and Inheritance](https://mippi-the-dork.github.io/Chroma/?page=02-colors-and-inheritance%2FREADME.md) |
-| Organizing and selecting by color | [Selection and Outliner](https://mippi-the-dork.github.io/Chroma/?page=03-selection-and-outliner%2FREADME.md) |
-| Viewport overlays and visualization | [Viewport Presentation](https://mippi-the-dork.github.io/Chroma/?page=04-viewport%2FREADME.md) |
-| Project configuration | [Project Settings](https://mippi-the-dork.github.io/Chroma/?page=05-settings-and-support%2Fsettings%2FDESIGN.md) |
-| Saving and team workflows | [Saving and Team Workflows](https://mippi-the-dork.github.io/Chroma/?page=05-settings-and-support%2Fsaving%2FDESIGN.md) |
-| How the plugin works | [Implementation and API](https://mippi-the-dork.github.io/Chroma/?page=05-settings-and-support%2Farchitecture%2FTECHNICAL.md) |
-| When something doesn't behave as expected | [Troubleshooting and FAQ](https://mippi-the-dork.github.io/Chroma/?page=05-settings-and-support%2Ftroubleshooting%2FDESIGN.md) |
+- **Loaded content only.** Color editing, matching selection, and used-color collection do not include unloaded World Partition Actors.
+- **Folder inheritance is not attachment inheritance.** Attached Actors don't automatically inherit a parent Actor's color; containing Outliner folders determine inherited color.
+- **Clear Override and No Color are different.** Clearing removes a direct assignment and resumes folder inheritance; No Color intentionally blocks it.
+- **Outliner filters affect Folder selection.** Chroma may select filtered-out matching Actors, but hidden matching Folder rows cannot always be selected safely.
+- **Viewport features have rendering limits.** Selection outlines use up to six extra distinct colors when slots are free. Specialized rendering paths, custom icon widgets, translucency, Landscapes, and per-instance editing may behave differently.
+- **No packaged-game Chroma runtime.** Organizational colors do not replace materials, move Actors, change gameplay visibility, or affect the packaged game's visuals.
+- **Save and share your changes normally.** Actor and Folder assignments belong to editor packages; named project colors belong to Chroma project configuration. Chroma does not perform Perforce checkouts, submissions, merges, or synchronization.
 
----
+For more detail, see [Troubleshooting and FAQ](https://mippi-the-dork.github.io/Chroma/?page=05-settings-and-support%2Ftroubleshooting%2FDESIGN.md) and [Saving and Team Workflows](https://mippi-the-dork.github.io/Chroma/?page=05-settings-and-support%2Fsaving%2FDESIGN.md).
 
-## Compatibility and getting Chroma
+## What's next?
 
-**Chroma v1.0.1** targets **Unreal Engine 5.8.x**, **Windows 64-bit**, and the **Unreal Editor**. The repository documents testing on Unreal Engine **5.8.2**. Chroma is editor-only, with no runtime Actor or Component dependency.
+Chroma's current documented release is **v1.0.1**. No additional feature set or next major version has been committed in the roadmap. Future work and validation priorities will be documented as plans develop, without presenting them as shipped features.
 
-- [GitHub Releases](https://github.com/mippi-the-dork/Chroma/releases) — check for a compatible precompiled build when available.
-- [Chroma source code](https://github.com/mippi-the-dork/Chroma) — for developers who want to build the plugin.
-- [Installation instructions](https://mippi-the-dork.github.io/Chroma/?page=01-getting-started%2Finstall%2FDESIGN.md) — Fab availability, installation paths, source builds, and compatibility details.
+[**View the Chroma Roadmap →**](https://mippi-the-dork.github.io/Chroma/?page=ROADMAP.md)
 
-*Fab and precompiled release availability should be checked on their respective listings; a source archive is not necessarily a precompiled plugin.*
+## Issues, feature requests and contributions
 
-## What Chroma doesn't do
+Found a bug? Please [open an issue](https://github.com/mippi-the-dork/Chroma/issues) with your Chroma/Unreal versions, installation method, affected Actor or Folder setup, steps to reproduce, and screenshots, video or Output Log excerpts where useful. For color inheritance problems, include the relevant Outliner folder hierarchy.
 
-Chroma is a **visual organization tool for the Unreal Editor**, not a gameplay or material system.
+Have an idea? [Submit a feature request](https://github.com/mippi-the-dork/Chroma/issues) describing the organization problem you'd like to solve and the outcome you're after.
 
-- It does **not** change Actor materials, geometry, transforms, visibility, attachment relationships, or Folder hierarchy.
-- It does **not** add runtime Actors or Components, change packaged-game visuals, or replicate colors into gameplay.
-- Its folder-color inheritance follows **World Outliner folders**, not attachment relationships.
-- Color editing, matching, and used-color collection work on **loaded editor content**; unloaded World Partition Actors are not included.
-- Outliner filters can prevent hidden matching **Folder rows** from being selected, although filtered Actors can still be matched.
-- Colored selection outlines support up to **six additional distinct colors** when available; unsupported or specialized rendering paths may use Unreal's ordinary outline.
-- Tinted icons and Actor Coloration depend on compatible native editor widgets and supported rendered geometry. Empty Actors and Folders have no viewport geometry to recolor.
-- Chroma does not automatically check out, submit, sync, or merge source-control files. Save and share the affected packages and palette configuration through your usual project workflow.
-
-For detailed behavior and known edge cases, see the [documentation's troubleshooting and limitations](https://mippi-the-dork.github.io/Chroma/?page=05-settings-and-support%2Ftroubleshooting%2FDESIGN.md).
-
----
-
-## Bugs, feature requests, and contributions
-
-**Found a bug?** [Open an issue](https://github.com/mippi-the-dork/Chroma/issues/new). Include the Chroma and Unreal Engine versions, the installation method, whether Actors or Folders are involved, exact reproduction steps, relevant Outliner/World Partition context, screenshots or video, and Unreal Editor logs where useful. For inheritance issues, a small Folder hierarchy example is especially helpful.
-
-**Have an idea?** [Request a feature](https://github.com/mippi-the-dork/Chroma/issues/new) and describe the *organizational problem* you're trying to solve. That makes it easier to assess whether the improvement belongs in Chroma and what the simplest useful solution might be.
-
-**Want to contribute?** Pull requests are welcome. For significant changes, [open an issue first](https://github.com/mippi-the-dork/Chroma/issues) so the expected behavior can be discussed before major implementation work. Chroma's focus remains color-based editor organization, selection, and visualization.
+**Pull requests are welcome.** For significant changes, open an issue first so the intended scope can be discussed. Chroma aims to stay compact, understandable, and native to Unreal's existing editor workflows.
 
 ## License
 
-Chroma is released under the **MIT License**. See [LICENSE](LICENSE) for the complete terms.
+Chroma is distributed under the **MIT License**. See [LICENSE](LICENSE) for the full terms.
 
 ---
 
-**Chroma** is created by **Mippi the Dork**.
+**Chroma is created by Mippi the Dork.**
 
-**[Read the documentation](https://mippi-the-dork.github.io/Chroma/)** · **[View the source](https://github.com/mippi-the-dork/Chroma)** · **[Report an issue](https://github.com/mippi-the-dork/Chroma/issues)**
+**[Explore the Documentation](https://mippi-the-dork.github.io/Chroma/)** · **[Get Chroma](https://github.com/mippi-the-dork/Chroma/releases)** · **[Report an Issue](https://github.com/mippi-the-dork/Chroma/issues)**
